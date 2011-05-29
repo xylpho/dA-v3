@@ -1,0 +1,121 @@
+<html lang="fr">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font: 100%/1 Helvetica, "Lucida Grande", arial, sans-serif;
+	}
+	
+	/* @group App Structure */
+	section.page {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-moz-box-orient: vertical;
+		-webkit-box-orient: vertical;
+		box-orient: vertical;
+		width: 100%;
+		height: 100%;
+	}
+	
+	header {
+		width: 100%;
+	}
+	
+	section.main {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-flex: 2;
+		-moz-box-flex: 2;
+		box-flex: 2;
+		-moz-box-orient: horizontal;
+		-webkit-box-orient: horizontal;
+		box-orient: horizontal;
+	}
+	
+	section.main nav {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+	
+	}
+	
+	section.main article {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-flex: 2;
+		-moz-box-flex: 2;
+		box-flex: 2;
+	}
+	
+	footer {
+		height: 35px;
+	}
+	/* @end */
+	/* @group Top Level Design */
+	header {
+		
+	}
+	
+	header>nav {
+		background: #333;
+		color: #fefefe;
+	}
+	
+	section.main {
+		background: yellow;
+	}
+	
+	section.main nav {
+		border: 1px solid red;
+		width: 200px;
+	}
+	
+	section.main article {
+		border: 1px solid blue;
+	}
+	/* @end */
+	</style>
+</head>
+<body>
+	<section class="page">
+		<header>
+			<nav>
+				<ul>
+					<li>Bienvenue xylpho</li>
+					<li>disconnect</li>
+					<li>preferences</li>
+					<li>bugs</li>
+				</ul>
+			</nav>
+			<hgroup>
+				<h1>my web app layout</h1>
+			</hgroup>
+		</header>
+		<section class="main">
+			<nav>
+				<ul>
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+					<li>item 4</li>
+					<li>item 5</li>
+					<li>item 6</li>
+				</ul>
+			</nav>
+			<article><h2>dashboard</h2></article>
+		</section>
+		<footer>
+			<p>xylpho - useless creations</p>
+		</footer>
+	</section>
+</body>
+</html>
