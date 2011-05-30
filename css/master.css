@@ -1,3 +1,38 @@
+/* CONSTANTES COULEURS
+
+Bleus
+	1 : rgb(193, 231, 253)
+	2 : rgb(104, 186, 251)
+	3 : rgb(31, 118, 238)
+	4 : rgb(20, 85, 188)
+	5 : rgb(13, 54, 115)
+Verts
+	1 : rgb(229, 245, 209)
+	2 : rgb(177, 229, 122)
+	3 : rgb(104, 176, 28)
+	4 : rgb(51, 133, 20)
+	5 : rgb(35, 91, 13)
+Oranges
+	1 : rgb(255, 246, 181)
+	2 : rgb(251, 219, 109)
+	3 : rgb(242, 149, 34)
+	4 : rgb(233, 95, 29)
+	5 : rgb(202, 46, 22)
+Rouges
+	1 : rgb(247, 206, 208)
+	2 : rgb(241, 151, 156)
+	3 : rgb(233, 57, 70)
+	4 : rgb(201, 33, 22)
+	5 : rgb(139, 23, 17)
+Gris
+	1 : rgb(238, 238, 238)
+	2 : rgb(192, 192, 192)
+	3 : rgb(108, 108, 108)
+	4 : rgb(60, 60, 60)
+	5 : rgb(38, 38, 38)
+
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -90,6 +125,11 @@ section.main article {
 header>nav {
 	text-align: right;
 	font-size: 11px;
+}
+
+header>nav a, header>nav a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 header>nav>form {
