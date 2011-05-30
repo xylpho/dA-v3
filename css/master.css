@@ -7,6 +7,14 @@ body {
 	font: 100%/1 Helvetica, "Lucida Grande", arial, sans-serif;
 }
 
+li {
+	list-style-type: none;
+}
+
+button {
+	vertical-align: middle;
+}
+
 /* @group App Structure */
 section.page {
 	display: -webkit-box;
@@ -78,3 +86,32 @@ section.main article {
 	border: 1px solid blue;
 }
 /* @end */
+/* @group header */
+header>nav {
+	text-align: right;
+	font-size: 11px;
+}
+
+header>nav>form {
+	display: inline-block;
+	border: 1px solid red;
+	padding: 4px;
+}
+
+header>nav>form>p {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
