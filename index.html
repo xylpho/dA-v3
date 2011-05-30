@@ -2,18 +2,20 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
 </head>
 <body>
 	<section class="page">
 		<header>
 			<nav>
-				<ul>
-					<li>Bienvenue xylpho</li>
-					<li>disconnect</li>
-					<li>preferences</li>
-					<li>bugs</li>
-				</ul>
+				<form method="post" id="logbox">
+					<p>Welcome <b>Xylpho</b></p>
+					<button type="submit" name="action" value="logout">Disconnect</button>
+					<p><a href="#">preferences</a></p>
+				</form>
+				<form method="post" id="bugreport">
+					<button type="submit" name="action" value="Enregistrer">bug</button>
+				</form>
 			</nav>
 			<hgroup>
 				<h1>my web app layout</h1>
