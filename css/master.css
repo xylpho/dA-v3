@@ -41,6 +41,7 @@ Gris
 body {
 	font: 100%/1 Helvetica, "Lucida Grande", arial, sans-serif;
 	background: rgb(238, 238, 238);
+	overflow: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -95,6 +96,7 @@ section.main nav {
 	-moz-box-orient: vertical;
 	-webkit-box-orient: vertical;
 	box-orient: vertical;
+	overflow: auto;
 
 }
 
@@ -105,13 +107,22 @@ section.content {
 	-webkit-box-flex: 2;
 	-moz-box-flex: 2;
 	box-flex: 2;
-	-moz-box-orient: vertical;
-	-webkit-box-orient: vertical;
-	box-orient: vertical;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	box-orient: horizontal;
+	overflow: auto;
+	position: relative;
+	overflow-x: hidden;
 }
 
 footer {
 	height: 35px;
+	background: rgb(108, 108, 108);
+	display: -webkit-box;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 /* @end */
 /* @group Top Level Design */
@@ -133,7 +144,30 @@ section.main nav {
 
 section.content>article {
 	border: 1px solid blue;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	box-flex: 2;
 }
+
+.configure_panel {
+	display: -webkit-box;
+	/*display: -moz-box;*/
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	background: pink;
+	width: 200px;
+/*	position: absolute;
+	height: 100%;*/
+	margin-right: -200px;
+}
+
 /* @end */
 /* @group header */
 header>nav {
@@ -228,10 +262,21 @@ section.main nav a:hover {
 
 nav>.global_nav {
 	margin-top: 10px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 
 nav>.app_tools {
-
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 
 section.main nav hr {
