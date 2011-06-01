@@ -44,8 +44,11 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: "Didact Gothic", helvetica, arial, sans-serif;
-	font-weight: normal;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 32px;
 }
 
 li {
@@ -82,6 +85,7 @@ section.main {
 	-moz-box-orient: horizontal;
 	-webkit-box-orient: horizontal;
 	box-orient: horizontal;
+	text-shadow: 0 1px 0 rgb(255, 255, 255);
 }
 
 section.main nav {
@@ -94,13 +98,16 @@ section.main nav {
 
 }
 
-section.main article {
+section.content {
 	display: -webkit-box;
 	display: -moz-box;
 	display: box;
 	-webkit-box-flex: 2;
 	-moz-box-flex: 2;
 	box-flex: 2;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 
 footer {
@@ -124,7 +131,7 @@ section.main nav {
 	width: 200px;
 }
 
-section.main article {
+section.content>article {
 	border: 1px solid blue;
 }
 /* @end */
@@ -204,16 +211,34 @@ header>hgroup>h1 {
 /* @group general menu design */
 section.main nav {
 	font-size: 12px;
+	color: rgb(108, 108, 108);
 }
 
+section.main nav a, section.main nav a:visited {
+	text-decoration: none;
+	color: rgb(108, 108, 108);
+	display: block;
+	padding: 4px 4px;
+	margin: 0 5px 2px;
+}
 
+section.main nav a:hover {
+	background: rgba(192, 192, 192, 0.2);
+}
 
 nav>.global_nav {
-
+	margin-top: 10px;
 }
 
 nav>.app_tools {
 
+}
+
+section.main nav hr {
+	margin: 5px;
+	border: 1px inset rgba(235, 235, 235, 0.5);
+	color: rgb(108, 108, 108);
+	height: 1px;
 }
 /* @end */
 
