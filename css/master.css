@@ -60,6 +60,20 @@ button {
 	vertical-align: middle;
 }
 
+/* @group buttons & links */
+article h2 span.configure {
+	display: inline-block;
+	vertical-align: super;
+	margin-left: 3px;
+	opacity: 0.2;
+}
+
+article h2:hover span.configure {
+	opacity: 1;
+}
+
+/* @end */
+
 /* @group App Structure */
 section.page {
 	display: -webkit-box;
