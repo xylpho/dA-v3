@@ -39,13 +39,13 @@ Gris
 }
 
 body {
-	font: 100%/1 Helvetica, "Lucida Grande", arial, sans-serif;
+	font: 100%/1 "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	background: rgb(238, 238, 238);
 	overflow: hidden;
+	text-rendering: optimizeLegibility;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: arial, helvetica, sans-serif;
 }
 
 h2 {
@@ -61,14 +61,14 @@ button {
 }
 
 /* @group buttons & links */
-article h2 span.configure {
+article hgroup span.configure {
 	display: inline-block;
 	vertical-align: super;
 	margin-left: 3px;
 	opacity: 0.2;
 }
 
-article h2:hover span.configure {
+article hgroup:hover span.configure {
 	opacity: 1;
 }
 
@@ -157,7 +157,6 @@ section.main nav {
 }
 
 section.content>article {
-	border: 1px solid blue;
 	display: -webkit-box;
 	display: -moz-box;
 	display: box;
@@ -166,6 +165,7 @@ section.content>article {
 	box-orient: vertical;-webkit-box-flex: 2;
 	-moz-box-flex: 2;
 	box-flex: 2;
+	padding: 8px;
 }
 
 .configure_panel {
@@ -300,7 +300,28 @@ section.main nav hr {
 	height: 1px;
 }
 /* @end */
+/* @group Dashboard */
+article>hgroup>h2 {
+	display: inline-block;
+	color: rgb(108, 108, 108);
+	font-size: 16px;
+	text-transform: uppercase;
+}
 
+article>hgroup>p {
+	font-size: 18px;
+	display: inline-block;
+}
+
+article>hgroup>p>a, article>hgroup>p>a:visited {
+	color: rgb(31, 118, 238);
+	text-decoration: none;
+}
+
+article>hgroup>p>a:hover {
+	color: rgb(20, 85, 188);
+}
+/* @end */
 
 
 
