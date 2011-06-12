@@ -5,9 +5,25 @@
 	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>-->
-	<script src="js/jquery-1.4.2.min.js"></script>
-	<script src="js/jquery-ui-1.8.2.custom.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+	<script src="js/enhance.js"></script>
 	<script src="js/webapp.js"></script>
+	<script>
+		// Run capabilities test
+		// enhance({
+		// 			loadScripts: [
+		// 				{src: 'js/excanvas.js', iecondition: 'none'},
+		// 				'js/jquery-1.4.2.min.js',
+		// 				'js/visualize.jQuery.js',
+		// 				'js/graphs.js'
+		//	] ,
+			// 		loadStyles: [
+			// 			'css/visualize.css',
+			// 			'css/visualize-dark.css'
+			// 		]	
+		// });
+	</script>
 </head>
 <body>
 	<section class="page">
@@ -53,9 +69,41 @@
 						<p><a href="#">dAgence Site</a></p>
 						<span class="configure"><a href="#"><img src="images/conf_blue.png"></a></span>
 					</hgroup>
-					<article class="graph_pref">
-						<h3>Performances</h3>
-					</article>
+					<div class="column">
+					<section class="db_module widget">
+						<header>
+							<a href="#" class="collapse">collapse</a>
+							<h3>Performances</h3>
+							<a href="#" class="edit">edit</a>
+							<a href="#" class="remove">close</a>
+						</header>
+						<article>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</article>
+					</section>
+					<section class="db_module widget_half">
+						<header>
+							<a href="#" class="collapse">collapse</a>
+							<h3>Test module</h3>
+							<a href="#" class="edit">edit</a>
+							<a href="#" class="remove">close</a>
+						</header>
+						<article>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</article>
+					</section>
+					<section class="db_module widget_half">
+						<header>
+							<a href="#" class="collapse">collapse</a>
+							<h3>Test module</h3>
+							<a href="#" class="edit">edit</a>
+							<a href="#" class="remove">close</a>
+						</header>
+						<article>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</article>
+					</section>
+					</div>
 				</article>
 				<aside class="configure_panel">
 					<h3>testons</h3>

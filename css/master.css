@@ -175,11 +175,13 @@ section.content>article {
 	-moz-box-orient: vertical;
 	-webkit-box-orient: vertical;
 	box-orient: vertical;
-	background: pink;
+	background: #bbb;
 	width: 200px;
+	padding: 10px;
 /*	position: absolute;
 	height: 100%;*/
-	margin-right: -200px;
+	margin-right: -220px;
+	-webkit-box-shadow: inset 2px 0 5px #666, inset 0 0 5px #bbb;
 }
 
 /* @end */
@@ -322,6 +324,141 @@ article>hgroup>p>a:hover {
 	color: rgb(20, 85, 188);
 }
 /* @end */
+
+/* @group graphes */
+.visualize {
+	border: 1px solid #888;
+	position: relative;
+	background: #fff;
+	margin-left: 30px;
+}
+.visualize canvas {
+	position: absolute;
+	left: ;
+}
+
+/*table title, key elements*/
+.dash-datas {
+	width: 95%;
+}
+
+.visualize .visualize-info {
+	display: none;
+	/*padding: 3px 5px;
+	background: #fafafa;
+	border: 1px solid #888;
+	position: absolute;
+	top: -20px;
+	right: 10px;
+	opacity: .8;*/
+}
+/*.visualize .visualize-title {
+	display: block;
+	color: #333;
+	margin-bottom: 3px;
+	font-size: 1.1em;
+}*/
+.visualize ul.visualize-key { list-style: none;  }
+.visualize ul.visualize-key li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	padding-left: 10px;
+	position: relative;
+}
+.visualize ul.visualize-key .visualize-key-color {
+	width: 6px;
+	height: 6px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -3px;
+}
+.visualize ul.visualize-key .visualize-key-label { color: #000; }
+
+/*line,bar, area labels*/
+.visualize-labels-x,.visualize-labels-y {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.visualize-labels-x li, .visualize-labels-y li {
+	position: absolute;
+	bottom: 0;
+}
+.visualize-labels-x li span.label, .visualize-labels-y li span.label {
+	font-size: 11px;
+	font-weight: bold;
+	position: absolute;
+	color: #555;
+}
+.visualize-labels-x li span.line, .visualize-labels-y li span.line {
+	position: absolute;
+	border: 0 solid #ccc;
+}
+.visualize-labels-x li { height: 100%; }
+.visualize-labels-x li span.label {
+	top: 100%;
+	margin-top: 5px;
+}
+.visualize-labels-x li span.line {
+	border-left-width: 1px;
+	height: 100%;
+	display: block;
+}
+.visualize-labels-x li span.line { border: 0; } /*hide vertical lines on area, line, bar*/
+.visualize-labels-y li { width: 100%; }
+.visualize-labels-y li span.label {
+	right: 100%;
+	margin-right: 5px;
+	display: block;
+	width: 100px;
+	text-align: right;
+}
+.visualize-labels-y li span.line {
+	border-top-width: 1px;
+	width: 100%;
+}
+.visualize-bar .visualize-labels-x li span.label {
+	width: 100%;
+	text-align: center;
+}
+/* @end */
+/* @group widgets */
+.db_module {
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+.db_module header {
+	background: #aaa;
+	padding: 5px;
+	width: auto;
+}
+
+.db_module header * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.widget_half {
+	float: left;
+	width: 47.8%;
+}
+/* #end */
+
+
+
+
+
+
+
+
 
 
 
